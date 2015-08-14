@@ -1,3 +1,2 @@
-cd $(git rev-parse --show-cdup)
 git pull
 find \.* -maxdepth 0 -type f -exec cp '{}' ~/ \;
