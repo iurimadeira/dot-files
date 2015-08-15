@@ -21,6 +21,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-commentary'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'itchyny/lightline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,3 +37,4 @@ let g:nerdtree_tabs_startup_cd=1
 
 " Tmuxline
 let g:tmuxline_theme = 'wombat'
+let g:tmuxline_preset = 'full'
