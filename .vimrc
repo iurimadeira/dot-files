@@ -1,7 +1,6 @@
 " NERDTree Config
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=20
-let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_smart_startup_focus=1
 let g:nerdtree_tabs_synchronize_view=1
 let g:nerdtree_tabs_startup_cd=1
