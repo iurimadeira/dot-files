@@ -13,7 +13,12 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'kien/ctrlp.vim'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" NERDTree Config
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinSize=20
