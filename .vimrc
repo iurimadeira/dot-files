@@ -21,6 +21,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-commentary'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
