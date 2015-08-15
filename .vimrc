@@ -38,3 +38,6 @@ let g:nerdtree_tabs_startup_cd=1
 " Tmuxline
 let g:tmuxline_theme = 'wombat'
 let g:tmuxline_preset = 'full'
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
