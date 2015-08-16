@@ -29,6 +29,14 @@ set ttyfast
 set mouse=a
 set ttymouse=xterm2
 
+" Tab switching
+nnoremap <A-h> :tabprevious<CR>
+nnoremap <A-l> :tabnext<CR>
+
+" Line moving
+nnoremap <A-k> ddkP
+nnoremap <A-j> ddjP
+
 " case insensitive searching (unless specified)
 set ignorecase
 set smartcase
