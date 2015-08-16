@@ -12,3 +12,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # Setup keyboard related things
 setxkbmap -layout br
 setxkbmap -option caps:swapescape
+
+# Disabling control flow keystrokes
+stty -ixon
