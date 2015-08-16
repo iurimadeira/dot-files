@@ -12,7 +12,6 @@ set nocompatible
 
 " Leader - ( Spacebar )
 let mapleader = " "
-
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
