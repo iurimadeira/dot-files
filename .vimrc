@@ -30,12 +30,12 @@ set mouse=a
 set ttymouse=xterm2
 
 " Tab switching
-nnoremap <A-h> :tabprevious<CR>
-nnoremap <A-l> :tabnext<CR>
+nnoremap <C-H> :tabprevious<CR>
+nnoremap <C-L> :tabnext<CR>
 
 " Line moving
-nnoremap <A-k> ddkP
-nnoremap <A-j> ddjP
+nnoremap <C-K> ddkP
+nnoremap <C-J> ddjP
 
 " case insensitive searching (unless specified)
 set ignorecase
