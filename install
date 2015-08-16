@@ -1,5 +1,5 @@
 sudo apt-get remove vim vim-common vim-runtime vim-tiny
-sudo apt-get install vim tmux silversearch-ag zsh
+sudo apt-get install vim-gnome tmux silversearch-ag zsh
 
 git clone git@github.com:chriskempson/base16-gnome-terminal.git ~/color-schemes
 git clone git@github.com:powerline/fonts.git ~/powerline-fonts
