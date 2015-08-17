@@ -29,10 +29,6 @@ set ttyfast
 set mouse=a
 set ttymouse=xterm2
 
-" Tab switching
-nnoremap <leader>h :tabprevious<CR>
-nnoremap <leader>l :tabnext<CR>
-
 " case insensitive searching (unless specified)
 set ignorecase
 set smartcase
