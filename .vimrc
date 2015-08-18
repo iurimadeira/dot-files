@@ -205,3 +205,6 @@ function! InsertTabWrapper()
         return "\<c-p>"
     endif
 endfunction
+
+" Ag.vim always searching on project root
+let g:ag_working_path_mode="r"
