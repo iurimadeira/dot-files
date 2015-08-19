@@ -1,5 +1,2 @@
 git pull
 find \.* -maxdepth 0 -type f -exec cp '{}' ~/ \;
-
-setxkbmap -layout br
-sudo kbdrate -r 2 -d 250
