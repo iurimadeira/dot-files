@@ -88,10 +88,10 @@ autocmd InsertEnter * call ToggleRelativeOn()
 autocmd InsertLeave * call ToggleRelativeOn()
 
 " Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+noremap <M-j> <C-w>j
+noremap <M-k> <C-w>k
+noremap <M-h> <C-w>h
+noremap <M-l> <C-w>l
 
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.
@@ -208,3 +208,5 @@ endfunction
 
 " Ag.vim always searching on project root
 let g:ag_working_path_mode="r"
+
+set timeoutlen=1000 ttimeoutlen=0
