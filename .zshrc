@@ -18,7 +18,7 @@ stty -ixon
 
 # Git functions
 function gst() { git status; }
-function gca() { echo '[G]it [C]ommit [A]ll'; git add -all;  git commit -m "$*"; }
-function gcaps() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add -all;  git commit -m "$*"; git push; }
-function gcapl() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add -all;  git commit -m "$*"; git pull upstream master; }
-function gpt() { echo '[G]it [P]ush with [T]est'; COVERAGE=true rake parallel:spec && git push origin `git rev-parse --abbrev-ref HEAD` }
+function gca() { echo '[G]it [C]ommit [A]ll'; git add --all;  git commit -m "$*"; }
+function gcaps() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add --all;  git commit -m "$*"; git push; }
+function gcapl() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add --all;  git commit -m "$*"; git pull upstream master; }
+function gpst() { echo '[G]it [P]ush with [T]est'; COVERAGE=true rake parallel:spec && git push origin `git rev-parse --abbrev-ref HEAD` }
