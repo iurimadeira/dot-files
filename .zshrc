@@ -17,6 +17,7 @@ setxkbmap -option caps:swapescape
 stty -ixon
 
 # Git functions
-gst() { git status }
-gcp() { echo 'Committing all changes and pull upstream/master...'; git add -A .; git commit -m "$*"; git pull upstream master }
-gtp() { echo 'Running specs and pushing to origin...'; COVERAGE=true rake parallel:spec && git push origin `git rev-parse --abbrev-ref HEAD` }
+function gst() { git status; }
+function gca() { echo '[G]it [C]ommit [A]ll'; git add -A .;  git commit -m "$*"; }
+function gcap() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add -A .;  git commit -m "$*"; git pull upstream master; }
+function gpt() { echo '[G]it [P]ush with [T]est'; COVERAGE=true rake parallel:spec && git push origin `git rev-parse --abbrev-ref HEAD` }
