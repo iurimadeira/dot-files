@@ -37,8 +37,7 @@ if compiler_ruby.nil? or compiler_ruby == ""
   exit 1
 end
 
-changed_ruby_files = `git diff-index --name-only --cached
-HEAD`.split("\n").inject([]) do |files, line|
+changed_ruby_files = `git diff-index --name-only --cached HEAD`.split("\n").inject([]) do |files, line|
   files << line.chomp if line =~
 /(.+\.(e?rb|task|rake|thor)|[Rr]akefile|[Tt]horfile)/
   files
