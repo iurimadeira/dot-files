@@ -13,26 +13,26 @@ rescue PTY::ChildExited
 end
 
 # find out if there were any errors  
-html = open(html_path).read
-examples = html.match(/(\d+) examples/)[0].to_i rescue 0
-errors = html.match(/(\d+) errors/)[0].to_i rescue 0
+log = open(log_path).read
+examples = log.match(/(\d+) examples/)[0].to_i rescue 0
+errors = log.match(/(\d+) errors/)[0].to_i rescue 0
 if errors == 0 then
-  errors = html.match(/(\d+) failure/)[0].to_i rescue 0
+  errors = log.match(/(\d+) failure/)[0].to_i rescue 0
 end
-pending = html.match(/(\d+) pending/)[0].to_i rescue 0
+pending = log.match(/(\d+) pending/)[0].to_i rescue 0
 
 if errors.zero?
   puts "0 failed! #{examples} run, #{pending} pending"
-  # HTML Output when tests ran successfully:
-  # puts "View spec results at #{File.expand_path(html_path)}"
+  # log Output when tests ran successfully:
+  # puts "View spec results at #{File.expand_path(log_path)}"
   sleep 1
   exit 0
 else
-  puts "\aCOMMIT FAILED!!"
-  puts "View your rspec results at #{File.expand_path(html_path)}"
+  puts "\SPECS FAILED!!"
+  puts "View your rspec results at #{File.expand_path(log_path)}"
   puts
   puts "#{errors} failed! #{examples} run, #{pending} pending"
-  # Open HTML Ooutput when tests failed
-  # `open #{html_path}`
+  # Open log Ooutput when tests failed
+  # `open #{log_path}`
   exit 1
 end
