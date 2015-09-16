@@ -18,5 +18,5 @@ stty -ixon
 
 # Git functions
 function gst() { git status; }
-function gca() { echo '[G]it [C]ommit [A]ll'; git add --all;  git commit; }
-function gcap() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add --all;  git commit; git push $*; }
+function gca() { git add --all;  git commit; }
+function gcap() { git add --all;  git commit; git push $*; }
