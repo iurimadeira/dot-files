@@ -15,3 +15,8 @@ setxkbmap -option caps:swapescape
 
 # Disabling control flow keystrokes
 stty -ixon
+
+# Git functions
+gst() { git status }
+gcp() { echo 'Committing all changes and pull upstream/master...'; git add -A .; git commit -m "$*"; git pull upstream master }
+gtp() { echo 'Running specs and pushing to origin...'; COVERAGE=true rake parallel:spec && git push origin `git rev-parse --abbrev-ref HEAD` }
