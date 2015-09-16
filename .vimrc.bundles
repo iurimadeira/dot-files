@@ -32,21 +32,19 @@ Plugin 'rking/ag.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'karlbright/qfdo.vim'
 Plugin 'valloric/MatchTagAlways'
+Plugin 'terryma/vim-multiple-cursors'
 
 """ Highlighting, syntax, etc for various Languages
-"
 Plugin 'Slava/vim-spacebars'
 Plugin 'groenewege/vim-less'
 Plugin 'vim-ruby/vim-ruby'
 
 """ Theme / Pretty stuff
-"
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline' "Awesome looking meta at bottom
 Plugin 'majutsushi/tagbar'
 
 """ Extras that I find useful
-"
 Plugin 'pbrisbin/vim-mkdir'
   " Adds :Dash integratio
 Plugin 'rizzatti/dash.vim'

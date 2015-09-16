@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 require 'pty'
-html_path = "rspec_results.html"
+log_path = "log/rspec.log"
 begin
-  PTY.spawn( "rake parallel:spec --format h > rspec_results.html" ) do |stdin, stdout, pid|
+  PTY.spawn( "rake parallel:spec > log/rspec.log" ) do |stdin, stdout, pid|
   begin
     stdin.each { |line| print line }
   rescue Errno::EIO
