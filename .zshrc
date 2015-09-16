@@ -16,9 +16,9 @@ setxkbmap -option caps:swapescape
 # Disabling control flow keystrokes
 stty -ixon
 
-# Git functions
+# Git functionss
 function gst() { git status; }
-function gcall() { echo '[G]it [C]ommit [A]ll'; git add --all;  git commit -m "$*"; }
-function gcpush() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add --all;  git commit -m "$*"; git push; }
-function gcpull() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add --all;  git commit -m "$*"; git pull upstream master; }
-function gtpush() { echo '[G]it [P]ush with [T]est'; COVERAGE=true rake parallel:spec && git push origin `git rev-parse --abbrev-ref HEAD` }
+function gco() { echo '[G]it [C]ommit [A]ll'; git add --all;  git commit -m "$*"; }
+function gcops() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add --all;  git commit -m "$*"; git push; }
+function gcopl() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add --all;  git commit -m "$*"; git pull upstream master; }
+function gteps() { echo '[G]it [P]ush with [T]est'; COVERAGE=true rake parallel:spec && git push origin `git rev-parse --abbrev-ref HEAD` }
