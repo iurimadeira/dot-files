@@ -66,6 +66,7 @@ Plugin 'mattn/calendar-vim'
 " These were required by something...forgot what though
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
+Plugin 'ngmy/vim-rubocop'
 
 " Plugins to get sessions to auto-save
 " Plugin 'xolox/vim-session'
