@@ -16,7 +16,7 @@ setxkbmap -option caps:swapescape
 # Disabling control flow keystrokes
 stty -ixon
 
-# Git functionss
+# Git functions
 function gst() { git status; }
 function gca() { echo '[G]it [C]ommit [A]ll'; git add --all;  git commit; }
 function gcap() { echo '[G]it [C]ommit [A]ll and [P]ull'; git add --all;  git commit; git push $*; }
