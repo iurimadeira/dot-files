@@ -19,4 +19,4 @@ stty -ixon
 # Git functions
 function gst() { git status; }
 function gca() { git add --all;  git commit; }
-function gcap() { git add --all;  git commit; git push $*; }
+function gcap() {if [ -z "$*"  ]; then echo "No remote/branch! WTF r u doin?"; else; git add --all; git commit; git push $*; fi}
