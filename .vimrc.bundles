@@ -115,6 +115,9 @@ autocmd FileType javascript,css inoremap <silent> <Leader>; <c-o>:call cosco#com
 " This is to deal with handlebars issues in meteor
 let syntastic_mode_map = { 'passive_filetypes': ['html']  }
 
+" Enables syntastic checks
+let g:syntastic_ruby_rubocop_exec      = '/home/iuri/.rvm/gems/ruby-2.2.2@nferails23/bin/rubocop'
+
 " Allow powerline symbols to show up
 let g:airline_powerline_fonts = 1
 
