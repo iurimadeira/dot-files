@@ -211,8 +211,5 @@ let g:ag_working_path_mode="r"
 
 set timeoutlen=1000 ttimeoutlen=0
 
-let g:vimrubocop_keymap = 0
-nmap <Leader>r :RuboCop<CR>
-
 let g:syntastic_ruby_checkers          = ['rubocop', 'mri']
 let g:syntastic_ruby_rubocop_exec      = '/home/iuri/.rvm/rubies/ruby-2.2.2/bin/ruby /Users/jjasonclark/.rbenv/shims/rubocop'
