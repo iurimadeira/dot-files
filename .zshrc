@@ -18,4 +18,4 @@ stty -ixon
 
 # Git functions
 function gst() { git status; }
-function gca() { git add --all;  git commit; }
+function gcaa() { git add --all;  git commit; }
