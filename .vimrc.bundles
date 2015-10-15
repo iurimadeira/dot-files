@@ -122,7 +122,6 @@ let g:airline_powerline_fonts = 1
 let g:vimwiki_list = [{'path':'$HOME/Dropbox/vimwiki'}]
 
 " configure syntastic syntax checking to check on open as well as save
-let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 " Index ctags from any project
