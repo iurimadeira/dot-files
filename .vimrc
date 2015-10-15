@@ -211,8 +211,8 @@ let g:ag_working_path_mode="r"
 
 set timeoutlen=1000 ttimeoutlen=0
 
+let g:syntastic_mode_map = { 'mode': 'passive' }
 noremap <Leader>s :SyntasticCheck<CR>
-noremap <Leader>ss :SyntasticToggleMode<CR>
 
 let g:syntastic_ruby_checkers=['rubocop', 'mri']
 let g:syntastic_javascript_checkers=['jshint']
