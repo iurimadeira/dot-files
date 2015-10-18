@@ -36,7 +36,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mustache/vim-mustache-handlebars'
 
 """ Highlighting, syntax, etc for various Languages
-Plugin 'Slava/vim-spacebars'
 Plugin 'groenewege/vim-less'
 Plugin 'vim-ruby/vim-ruby'
 
