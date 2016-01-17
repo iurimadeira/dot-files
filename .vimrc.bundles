@@ -38,6 +38,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 """ Highlighting, syntax, etc for various Languages
 Plugin 'groenewege/vim-less'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'elixir-lang/vim-elixir'
 
 """ Theme / Pretty stuff
 Plugin 'altercation/vim-colors-solarized'
