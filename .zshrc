@@ -10,7 +10,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Setup keyboard related things
-setxkbmap -layout us
+setxkbmap -layout us intl
 setxkbmap -option caps:swapescape
 
 # Disabling control flow keystrokes
