@@ -5,7 +5,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-. ~/.nvm/nvm.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -14,7 +13,7 @@ setxkbmap -layout us_intl -model pc104 -variant basic
 setxkbmap -option caps:swapescape
 # Para fazer a cedilha aparecer, insira no /etc/environment
 # GTK_IM_MODULE=cedilla
-# QT_IM_MODULE=cedilla 
+# QT_IM_MODULE=cedilla
 
 # Disabling control flow keystrokes
 stty -ixon
