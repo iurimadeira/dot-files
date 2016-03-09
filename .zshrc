@@ -10,8 +10,11 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Setup keyboard related things
-setxkbmap -layout us intl
+setxkbmap -layout us_intl -model pc104 -variant basic
 setxkbmap -option caps:swapescape
+# Para fazer a cedilha aparecer, insira no /etc/environment
+# GTK_IM_MODULE=cedilla
+# QT_IM_MODULE=cedilla 
 
 # Disabling control flow keystrokes
 stty -ixon
