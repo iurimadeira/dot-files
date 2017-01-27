@@ -3,10 +3,15 @@
 'body':
   'ctrl-w': 'unset!'
   'alt-w': 'core:close'
+  'alt-d': 'pane:split-right-and-copy-active-item'
+  'alt-shift-l': 'window:focus-next-pane'
+  'alt-shift-h': 'window:focus-previous-pane'
 '.platform-win32, .platform-linux':
   'ctrl-h': 'find-and-replace:show-replace'
   'alt-j': 'core:move-down'
   'alt-k': 'core:move-up'
+  'alt-h': 'pane:show-previous-item'
+  'alt-l': 'pane:show-next-item'
   'ctrl-shift-d': 'find-and-replace:select-next'
   'ctrl-shift-r': 'symbols-view:toggle-file-symbols'
 'atom-workspace atom-text-editor:not([mini])':
