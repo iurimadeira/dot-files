@@ -1,11 +1,9 @@
 sudo apt-get remove vim vim-common vim-runtime vim-tiny
-sudo apt-get install vim-gnome tmux silversearcher-ag zsh
-
-git clone git@github.com:chriskempson/base16-gnome-terminal.git ~/color-schemes
-git clone git@github.com:powerline/fonts.git ~/powerline-fonts
+sudo apt-get install vim vim-full tmux silversearcher-ag zsh
 
 mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-setxkbmap -layout br
 sudo kbdrate -r 2 -d 250
+
+find \.* -maxdepth 0 -type f -exec ln -s $(pwd)/'{}' ~/ \;
