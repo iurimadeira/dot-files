@@ -3,3 +3,5 @@
 	name = Iuri Madeira
 [core]
 	editor = vim
+[push]
+	default = simple
