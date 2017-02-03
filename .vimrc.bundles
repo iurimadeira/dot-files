@@ -2,61 +2,61 @@ if &compatible
   set nocompatible
 end
 
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
+  filetype off
+  set rtp+=~/.vim/bundle/Vundle.vim/
+  call vundle#begin()
 
-" Plugins to manage plugins. Pluginception?
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-bundler'
+  " Plugins to manage plugins. Pluginception?
+  Plugin 'gmarik/Vundle.vim'
+  Plugin 'tpope/vim-bundler'
 
-""" Make Vim work like an IDE...Core plugins for me
-"
-Plugin 'tpope/vim-rails'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'christoomey/vim-tmux-runner.git'
-Plugin 'christoomey/vim-run-interactive'
-Plugin 'vim-scripts/ctags.vim'
-Plugin 'scrooloose/syntastic' "Syntax Highlighting
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ervandew/supertab'
-Plugin 'vim-scripts/tComment'
-Plugin 'vim-scripts/HTML-AutoCloseTag'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tpope/vim-fugitive' "Make git awesome
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'rking/ag.vim'
-Plugin 'karlbright/qfdo.vim'
-Plugin 'valloric/MatchTagAlways'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'mustache/vim-mustache-handlebars'
+  """ Make Vim work like an IDE...Core plugins for me
+  "
+  Plugin 'tpope/vim-rails'
+  Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'christoomey/vim-tmux-runner.git'
+  Plugin 'christoomey/vim-run-interactive'
+  Plugin 'vim-scripts/ctags.vim'
+  Plugin 'scrooloose/syntastic' "Syntax Highlighting
+  Plugin 'scrooloose/nerdtree'
+  Plugin 'jistr/vim-nerdtree-tabs'
+  Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'ervandew/supertab'
+  Plugin 'vim-scripts/tComment'
+  Plugin 'vim-scripts/HTML-AutoCloseTag'
+  Plugin 'jiangmiao/auto-pairs'
+  Plugin 'tpope/vim-fugitive' "Make git awesome
+  Plugin 'tpope/vim-repeat'
+  Plugin 'tpope/vim-surround'
+  Plugin 'rking/ag.vim'
+  Plugin 'karlbright/qfdo.vim'
+  Plugin 'valloric/MatchTagAlways'
+  Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'mustache/vim-mustache-handlebars'
 
-""" Highlighting, syntax, etc for various Languages
-Plugin 'groenewege/vim-less'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'elixir-lang/vim-elixir'
+  """ Highlighting, syntax, etc for various Languages
+  Plugin 'groenewege/vim-less'
+  Plugin 'vim-ruby/vim-ruby'
+  Plugin 'elixir-lang/vim-elixir'
 
-""" Theme / Pretty stuff
-Plugin 'bling/vim-airline' "Awesome looking meta at bottom
-Plugin 'majutsushi/tagbar'
-Plugin 'alessandroyorba/monrovia'
+  """ Theme / Pretty stuff
+  Plugin 'bling/vim-airline' "Awesome looking meta at bottom
+  Plugin 'majutsushi/tagbar'
+  Plugin 'alessandroyorba/monrovia'
 
-""" Extras that I find useful
-Plugin 'pbrisbin/vim-mkdir'
-  " Adds :Dash integratio
-Plugin 'rizzatti/dash.vim'
-  " '%' matches html tags now
-Plugin 'vim-scripts/matchit.zip'
-  " Snippets ftw!
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+  """ Extras that I find useful
+  Plugin 'pbrisbin/vim-mkdir'
+    " Adds :Dash integratio
+  Plugin 'rizzatti/dash.vim'
+    " '%' matches html tags now
+  Plugin 'vim-scripts/matchit.zip'
+    " Snippets ftw!
+  Plugin 'garbas/vim-snipmate'
+  Plugin 'honza/vim-snippets'
 
-" These were required by something...forgot what though
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
+  " These were required by something...forgot what though
+  Plugin 'MarcWeber/vim-addon-mw-utils'
+  Plugin 'tomtom/tlib_vim'
 
 
 call vundle#end()
@@ -73,6 +73,12 @@ colorscheme monrovia
 "tmux integration
 let g:tmux_navigator_no_mappings = 1
 let g:tmux_navigator_save_on_switch = 1
+
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
 
 " open a dash search for the keyword under cursor
 nmap <silent><leader>d <Plug>DashSearch
