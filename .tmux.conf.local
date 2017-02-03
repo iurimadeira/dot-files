@@ -1,9 +1,5 @@
 #Allow mouse usage
-#set -g mode-mouse on
-#setw -g mode-mouse on
-#set -g mouse-resize-pane on
-#set -g mouse-select-pane on
-#set -g mouse-select-window on
+set -g mouse on
 
 # Shift + arrows to resize pane
 bind -n S-Left resize-pane -L 2
