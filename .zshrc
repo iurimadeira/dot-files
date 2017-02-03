@@ -10,8 +10,8 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Setup keyboard related things
 #setxkbmap -layout br
-dconf write /org/gnome/desktop/input-sources/xkb-options "['compose:ralt']"
-setxkbmap -layout us -model pc104 -variant basic
+#dconf write /org/gnome/desktop/input-sources/xkb-options "['compose:ralt']"
+setxkbmap -layout us_intl -model pc104 -variant basic
 setxkbmap -option caps:swapescape
 # Para fazer a cedilha aparecer, insira no /etc/environment
 #GTK_IM_MODULE=cedilla
