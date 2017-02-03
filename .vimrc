@@ -6,6 +6,10 @@ let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_synchronize_view=1
 let g:nerdtree_tabs_startup_cd=1
 
+" CtrlP
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_dotfiles = 0
+
 " Use Vim settings, rather then Vi settings. This setting must be as early as
 " possible, as it has side effects.
 set nocompatible
