@@ -6,4 +6,4 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 sudo kbdrate -r 2 -d 250
 
-find \.* -maxdepth 0 -type f -exec ln -s $(pwd)/'{}' ~/ \;
+sh update

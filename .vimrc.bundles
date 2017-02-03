@@ -29,7 +29,6 @@ Plugin 'tpope/vim-fugitive' "Make git awesome
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'rking/ag.vim'
-Plugin 'thoughtbot/vim-rspec'
 Plugin 'karlbright/qfdo.vim'
 Plugin 'valloric/MatchTagAlways'
 Plugin 'terryma/vim-multiple-cursors'
@@ -41,9 +40,9 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'elixir-lang/vim-elixir'
 
 """ Theme / Pretty stuff
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline' "Awesome looking meta at bottom
 Plugin 'majutsushi/tagbar'
+Plugin 'alessandroyorba/monrovia'
 
 """ Extras that I find useful
 Plugin 'pbrisbin/vim-mkdir'
@@ -55,40 +54,22 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'cmather/vim-meteor-snippets'
-  " Make gists easily from Vim
-Plugin 'mattn/gist-vim'
-Plugin 'mattn/webapi-vim'
-  " I LOVE vimiwki. Just Google it if you are curious :)
-Plugin 'vimwiki/vimwiki'
-Plugin 'mattn/calendar-vim'
 
 " These were required by something...forgot what though
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 
-" Plugins to get sessions to auto-save
-" Plugin 'xolox/vim-session'
-" Plugin 'xolox/vim-misc'
-
 
 call vundle#end()
 filetype on
 
-
 """ PLUGIN RELATED TWEAKS
 "
 
-" Color scheme
+" THEME
 syntax enable
 let g:solarized_termcolors=16
-set background=dark
-colorscheme solarized
-
-"Allow moving around between Tmux windows
-nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+colorscheme monrovia
 
 "tmux integration
 let g:tmux_navigator_no_mappings = 1

@@ -1,7 +1,7 @@
 " NERDTree Config
 map <C-\> :NERDTreeToggle<CR>
-let g:NERDTreeWinSize=20
-let g:nerdtree_tabs_smart_startup_focus=1
+let g:NERDTreeWinSize=25
+let g:nerdtree_tabs_smart_startup_focus=0
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_synchronize_view=1
 let g:nerdtree_tabs_startup_cd=1
@@ -121,7 +121,6 @@ map <silent><Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>"
 map <silent><Leader><S-p> :set paste<CR>O<esc>"*]p:set nopaste<cr>"
 map <silent><C-v> :set paste<CR>o<esc>"*]p:set nopaste<cr>"
 
-
 """ MORE AWESOME HOTKEYS
 "
 "
@@ -155,7 +154,7 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
 " Switch between the last two files
-nnoremap <leader><leader> <c-^>
+"nnoremap <leader><leader> <c-^>
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =

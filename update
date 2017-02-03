@@ -1,0 +1,2 @@
+git pull
+find \.* -maxdepth 0 -type f -exec ln -s $(pwd)/'{}' ~/ \;
