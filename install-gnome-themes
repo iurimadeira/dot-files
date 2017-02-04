@@ -1,0 +1,5 @@
+git clone git@github.com:chriskempson/base16-gnome-terminal.git ~/color-schemes
+cd ~/color-schemes
+chmod +x *
+find *.sh -maxdepth 0 -type f -exec ./'{}' \;
+rm -rf ~/color-schemes

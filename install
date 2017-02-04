@@ -10,3 +10,4 @@ sudo kbdrate -r 2 -d 250
 
 sh update
 sh install-airline-fonts
+sh install-gnome-themes
