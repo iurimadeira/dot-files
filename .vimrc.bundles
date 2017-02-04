@@ -12,6 +12,7 @@ end
 
   """ Make Vim work like an IDE...Core plugins for me
   "
+  Plugin 'slashmili/alchemist.vim'
   Plugin 'tpope/vim-rails'
   Plugin 'christoomey/vim-tmux-navigator'
   Plugin 'christoomey/vim-tmux-runner.git'
@@ -33,6 +34,8 @@ end
   Plugin 'valloric/MatchTagAlways'
   Plugin 'terryma/vim-multiple-cursors'
   Plugin 'mustache/vim-mustache-handlebars'
+  Plugin 'valloric/youcompleteme'
+  Plugin 'SirVer/ultisnips'
 
   """ Highlighting, syntax, etc for various Languages
   Plugin 'groenewege/vim-less'
@@ -113,3 +116,15 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+" YouCompleteMe and Ultisnips
+
+"" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+ 
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
