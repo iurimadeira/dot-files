@@ -70,6 +70,7 @@ filetype on
 syntax enable
 let g:solarized_termcolors=16
 colorscheme monrovia
+let g:airline_powerline_fonts = 1
 
 "tmux integration
 let g:tmux_navigator_no_mappings = 1
