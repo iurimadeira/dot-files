@@ -40,10 +40,10 @@ end
   Plugin 'elixir-lang/vim-elixir'
 
   """ Theme / Pretty stuff
+  Plugin 'flazz/vim-colorschemes'
   Plugin 'bling/vim-airline' "Awesome looking meta at bottom
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'majutsushi/tagbar'
-  Plugin 'alessandroyorba/monrovia'
 
   """ Extras that I find useful
   Plugin 'pbrisbin/vim-mkdir'
@@ -59,7 +59,6 @@ end
   Plugin 'MarcWeber/vim-addon-mw-utils'
   Plugin 'tomtom/tlib_vim'
 
-
 call vundle#end()
 filetype on
 
@@ -68,9 +67,8 @@ filetype on
 
 " THEME
 syntax enable
-let g:solarized_termcolors=16
-colorscheme monrovia
 let g:airline_powerline_fonts = 1
+colorscheme gotham256
 
 "tmux integration
 let g:tmux_navigator_no_mappings = 1
