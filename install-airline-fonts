@@ -1,6 +1,6 @@
-echo "\n\n=============================="
-echo "\nInstalling airline fonts..."
-echo "==============================\n\n"
+echo "\n=============================="
+echo "Installing airline fonts..."
+echo "==============================\n"
 
 mkdir ~/.fonts && cd ~/.fonts
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf

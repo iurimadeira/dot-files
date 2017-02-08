@@ -1,6 +1,6 @@
-echo "\n\n=============================="
-echo "\nInstalling vim and tmux..."
-echo "==============================\n\n"
+echo "\n=============================="
+echo "Installing vim and tmux..."
+echo "==============================\n"
 
 sudo apt-get remove vim vim-common vim-runtime vim-tiny
 sudo apt-get install vim vim-full tmux silversearcher-ag zsh
@@ -12,9 +12,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 sudo kbdrate -r 2 -d 250
 
-echo "\n\n=============================="
-echo "\nSetting up dotfiles..."
-echo "==============================\n\n"
+echo "\n=============================="
+echo "Setting up dotfiles..."
+echo "==============================\n"
 
 sh update
 sh install-airline-fonts

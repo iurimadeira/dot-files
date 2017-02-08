@@ -1,6 +1,6 @@
-echo "\n\n=============================="
-echo "\nInstalling gnome themes..."
-echo "==============================\n\n"
+echo "\n=============================="
+echo "Installing gnome themes..."
+echo "==============================\n"
 
 git clone git@github.com:chriskempson/base16-gnome-terminal.git ~/color-schemes
 cd ~/color-schemes
