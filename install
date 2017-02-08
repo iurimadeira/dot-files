@@ -19,3 +19,4 @@ echo "==============================\n"
 sh update
 sh install-airline-fonts
 sh install-gnome-themes
+sh install-asdf
