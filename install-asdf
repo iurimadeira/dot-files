@@ -1,0 +1,30 @@
+echo "\n=============================="
+echo "Installing asdf..."
+echo "==============================\n"
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1
+
+echo "\n=============================="
+echo "Installing asdf plugins..."
+echo "==============================\n"
+
+~/.asdf/bin/asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang
+~/.asdf/bin/asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir
+~/.asdf/bin/asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby
+~/.asdf/bin/asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs
+
+echo "\n=============================="
+echo "Installing last stable binaries..."
+echo "==============================\n"
+
+~/.asdf/bin/asdf install erlang $(~/.asdf/bin/asdf list-all erlang | tail -1)
+~/.asdf/bin/asdf global erlang $(~/.asdf/bin/asdf list-all erlang | tail -1)
+
+~/.asdf/bin/asdf install elixir $(~/.asdf/bin/asdf list-all elixir | tail -1)
+~/.asdf/bin/asdf global elixir $(~/.asdf/bin/asdf list-all elixir | tail -1)
+
+~/.asdf/bin/asdf install ruby $(~/.asdf/bin/asdf list-all ruby | tail -1)
+~/.asdf/bin/asdf global ruby $(~/.asdf/bin/asdf list-all ruby | tail -1)
+
+~/.asdf/bin/asdf install nodejs $(~/.asdf/bin/asdf list-all nodejs | tail -1)
+~/.asdf/bin/asdf global nodejs $(~/.asdf/bin/asdf list-all nodejs | tail -1)
