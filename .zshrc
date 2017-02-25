@@ -27,6 +27,3 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 0.9
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
-
-keychain -q ~/.ssh/id_rsa
-. ~/.keychain/$(hostname)-sh
