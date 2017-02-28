@@ -2,7 +2,7 @@ echo "\n=============================="
 echo "Installing asdf..."
 echo "==============================\n"
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1 &> /dev/null
 
 echo "\n=============================="
 echo "Installing asdf plugins..."

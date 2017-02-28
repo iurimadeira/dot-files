@@ -2,13 +2,12 @@ echo "\n=============================="
 echo "Installing vim and tmux..."
 echo "==============================\n"
 
-sudo apt-get remove vim vim-common vim-runtime vim-tiny
-sudo apt-get install vim vim-full tmux silversearcher-ag zsh
+sudo apt-get -y -q install vim tmux silversearcher-ag zsh
 
 mkdir -p ~/.vim/bundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &> /dev/null
 mkdir -p ~/.tmux/plugins
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm &> /dev/null
 
 sudo kbdrate -r 2 -d 250
 

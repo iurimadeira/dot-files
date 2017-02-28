@@ -2,7 +2,7 @@ echo "\n=============================="
 echo "Installing gnome themes..."
 echo "==============================\n"
 
-git clone git@github.com:chriskempson/base16-gnome-terminal.git ~/color-schemes
+git clone git@github.com:chriskempson/base16-gnome-terminal.git ~/color-schemes &> /dev/null
 cd ~/color-schemes
 chmod +x *
 find *.sh -maxdepth 0 -type f -exec ./'{}' \;
