@@ -16,6 +16,7 @@ setxkbmap -option caps:swapescape
 # Disabling control flow keystrokes
 stty -ixon
 
+
 # Git functions
 function gst() { git status; }
 function gcaa() { git add --all;  git commit; }
