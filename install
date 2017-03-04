@@ -4,7 +4,7 @@ echo "==============================\n"
 
 sudo apt-get -y -q install vim tmux silversearcher-ag zsh \
   build-essential libssl-dev libffi-dev python-dev \
-  libdbus-1-dev libdbus-glib-1-dev
+  libdbus-1-dev libdbus-glib-1-dev libpq-dev
 
 mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &> /dev/null
