@@ -1,3 +1,5 @@
+:set term=screen-256color
+
 " NERDTree Config
 map <C-\> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=25
