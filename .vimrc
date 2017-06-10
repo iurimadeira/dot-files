@@ -162,6 +162,10 @@ nnoremap <silent> <Down> :resize -5<cr>
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" Move panes
+map <leader>h <c-w>x <C-w>h
+map <leader>l <c-w><c-x> <C-w>l
+
 " Remap LastBuf to Shift-Ctrl-T
 map <c-s-t> :LastBuf<CR>
 map <leader>t :LastBuf<CR>
