@@ -169,6 +169,9 @@ map <leader>t :LastBuf<CR>
 " Closes buffer with Space-q
 map <leader>q :q<CR>
 
+" Opens a blank vsplit with Space-n
+map <leader>n :vnew<CR>
+
 " Switch between the last two files
 "nnoremap <leader><leader> <c-^>
 
