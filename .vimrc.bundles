@@ -36,6 +36,7 @@ end
   Plugin 'mustache/vim-mustache-handlebars'
   Plugin 'valloric/youcompleteme'
   Plugin 'SirVer/ultisnips'
+  Plugin 'iurimadeira/lastbuf.vim'
 
   """ VimWiki
   Plugin 'vimwiki/vimwiki'

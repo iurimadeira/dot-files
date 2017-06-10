@@ -162,6 +162,9 @@ nnoremap <silent> <Down> :resize -5<cr>
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" Remap LastBuf to Shift-Ctrl-T
+map <c-s-t> :LastBuf<CR>
+
 " Switch between the last two files
 "nnoremap <leader><leader> <c-^>
 

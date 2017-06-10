@@ -29,3 +29,4 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 0.9
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
+export PATH=$HOME/bin:$PATH
