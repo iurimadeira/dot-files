@@ -164,6 +164,10 @@ inoremap <S-Tab> <c-n>
 
 " Remap LastBuf to Shift-Ctrl-T
 map <c-s-t> :LastBuf<CR>
+map <leader>t :LastBuf<CR>
+
+" Closes buffer with Space-q
+map <leader>q :q<CR>
 
 " Switch between the last two files
 "nnoremap <leader><leader> <c-^>
