@@ -4,7 +4,8 @@ echo "==============================\n"
 
 sudo apt-get -y -q install vim tmux silversearcher-ag zsh \
   build-essential libssl-dev libffi-dev python-dev \
-  libdbus-1-dev libdbus-glib-1-dev libpq-dev inotify-tools
+  libdbus-1-dev libdbus-glib-1-dev libpq-dev inotify-tools \
+  vim-gtk
   
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
