@@ -2,10 +2,10 @@
 set -g mouse on
 
 # Shift + arrows to resize pane
-bind -n S-Left resize-pane -L 2
-bind -n S-Right resize-pane -R 2
-bind -n S-Down resize-pane -D 1
-bind -n S-Up resize-pane -U 1
+bind -n C-Left resize-pane -L 2
+bind -n C-Right resize-pane -R 2
+bind -n C-Down resize-pane -D 1
+bind -n C-Up resize-pane -U 1
 
 #vi style selection and copying to clipboard
 bind-key -t vi-copy v begin-selection
