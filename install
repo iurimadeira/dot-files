@@ -17,6 +17,14 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm &> /dev/null
 sudo kbdrate -r 2 -d 250
 
 echo "\n=============================="
+echo "Setting up binaries and dotfiles..."
+echo "==============================\n"
+
+find \.* -maxdepth 0 -type f -exec ln -s $(pwd)/'{}' ~/ \;
+ln -s "$(pwd)/bin" ~/
+chmod +x -R "$(pwd)/bin"
+
+echo "\n=============================="
 echo "Setting up dotfiles..."
 echo "==============================\n"
 
@@ -24,3 +32,4 @@ sh update
 sh install-airline-fonts
 sh install-gnome-themes
 sh install-asdf
+
