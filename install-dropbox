@@ -8,5 +8,5 @@ sudo mkdir /opt/dropbox
 sudo ln -s ~/.dropbox-dist/dropboxd /opt/dropbox/dropboxd
 sudo curl -o /etc/init.d/dropbox https://gist.githubusercontent.com/iurimadeira/1e8582fbea4b6127d6bb36da27bd8616/raw/699e7909bdae922201b8069fde3011bbf2062048/dropbox
 sudo chmod +x /etc/init.d/dropbox
-sudo echo "DROPBOX_USERS=\"$USER\"" > /etc/default/dropbox
+sudo echo "DROPBOX_USERS=\"$USER\"" | sudo tee /etc/default/dropbox
 sudo systemctl daemon-reload
