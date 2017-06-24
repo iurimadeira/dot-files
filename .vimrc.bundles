@@ -37,6 +37,7 @@ end
   Plugin 'valloric/youcompleteme'
   Plugin 'SirVer/ultisnips'
   Plugin 'iurimadeira/lastbuf.vim'
+  Plugin 'mmorearty/elixir-ctags'
 
   """ VimWiki
   Plugin 'vimwiki/vimwiki'
@@ -93,9 +94,6 @@ nmap <leader>D :Dash!
 map <C-n> :NERDTreeToggle<cr>
 nnoremap <C-t> :call ToggleRelativeOn()<cr>
 
-" mapping for Vimwiki
-:autocmd FileType vimwiki map <leader>c :call ToggleCalendar() <cr>
-
 " Syntastic won't hilight HTML unless you specify with :SyntasticCheck
 " This is to deal with handlebars issues in meteor
 let syntastic_mode_map = { 'passive_filetypes': ['html']  }
@@ -127,6 +125,7 @@ let g:vimwiki_list = [{'path':'$HOME/Dropbox/vimwiki'}]"
 
 " mapping for Vimwiki
 :autocmd FileType vimwiki map <leader>c :call ToggleCalendar() <cr>"
+:autocmd FileType vimwiki map <leader>wj :call vimwiki#base#goto(strftime('%d%m%Y'))<cr>"
 
 " Calender is used within VimWiki
 function! ToggleCalendar()
