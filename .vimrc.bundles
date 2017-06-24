@@ -125,7 +125,7 @@ let g:vimwiki_list = [{'path':'$HOME/Dropbox/vimwiki'}]"
 
 " mapping for Vimwiki
 :autocmd FileType vimwiki map <leader>c :call ToggleCalendar() <cr>"
-:autocmd FileType vimwiki map <leader>wj :call vimwiki#base#goto(strftime('%d%m%Y'))<cr>"
+:autocmd FileType vimwiki map <leader>wj :VimwikiMakeDiaryNote<cr>"
 
 " Calender is used within VimWiki
 function! ToggleCalendar()

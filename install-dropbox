@@ -10,3 +10,4 @@ sudo curl -o /etc/init.d/dropbox https://gist.githubusercontent.com/iurimadeira/
 sudo chmod +x /etc/init.d/dropbox
 sudo echo "DROPBOX_USERS=\"$USER\"" | sudo tee /etc/default/dropbox
 sudo systemctl daemon-reload
+sudo update-rc.d dropbox defaults
