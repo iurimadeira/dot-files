@@ -38,6 +38,7 @@ end
   Plugin 'SirVer/ultisnips'
   Plugin 'iurimadeira/lastbuf.vim'
   Plugin 'mmorearty/elixir-ctags'
+  Plugin 'chr4/nginx.vim'
 
   """ VimWiki
   Plugin 'vimwiki/vimwiki'
