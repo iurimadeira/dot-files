@@ -34,7 +34,7 @@ end
   Plugin 'valloric/MatchTagAlways'
   Plugin 'terryma/vim-multiple-cursors'
   Plugin 'mustache/vim-mustache-handlebars'
-  Plugin 'valloric/youcompleteme'
+  "Plugin 'valloric/youcompleteme'
   Plugin 'SirVer/ultisnips'
   Plugin 'iurimadeira/lastbuf.vim'
   Plugin 'mmorearty/elixir-ctags'
