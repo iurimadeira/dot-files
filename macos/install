@@ -19,7 +19,7 @@ echo "Setting up binaries and dotfiles..."
 echo "==============================\n"
 
 find \.* -maxdepth 0 -type f -exec ln -s $(pwd)/'{}' ~/ \;
-ln -s "$(pwd)/bin" ~/
+ln -s "$(pwd)/../bin/" ~/
 chmod +x -R "$(pwd)/bin"
 
 echo "\n=============================="

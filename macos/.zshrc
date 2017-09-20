@@ -4,6 +4,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 source $ZSH/oh-my-zsh.sh
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 stty -ixon -ixoff
 
