@@ -31,6 +31,7 @@ set autowrite     " Automatically :write before running commands
 set autoread      " Reload files changted outside vim
 
 "Allow usage of mouse in iTerm
+set lazyredraw
 set ttyfast
 set mouse=a
 set ttymouse=xterm2

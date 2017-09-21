@@ -13,20 +13,15 @@ end
   """ Make Vim work like an IDE...Core plugins for me
   "
   Plugin 'slashmili/alchemist.vim'
-  Plugin 'tpope/vim-rails'
   Plugin 'christoomey/vim-tmux-navigator'
-  Plugin 'christoomey/vim-tmux-runner.git'
-  Plugin 'christoomey/vim-run-interactive'
   Plugin 'vim-scripts/ctags.vim'
   Plugin 'scrooloose/syntastic' "Syntax Highlighting
   Plugin 'scrooloose/nerdtree'
   Plugin 'jistr/vim-nerdtree-tabs'
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'ervandew/supertab'
-  Plugin 'vim-scripts/tComment'
   Plugin 'vim-scripts/HTML-AutoCloseTag'
   Plugin 'jiangmiao/auto-pairs'
-  Plugin 'tpope/vim-fugitive' "Make git awesome
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'rking/ag.vim'
@@ -35,7 +30,7 @@ end
   Plugin 'terryma/vim-multiple-cursors'
   Plugin 'mustache/vim-mustache-handlebars'
   "Plugin 'valloric/youcompleteme'
-  Plugin 'SirVer/ultisnips'
+  "Plugin 'SirVer/ultisnips'
   Plugin 'iurimadeira/lastbuf.vim'
   Plugin 'mmorearty/elixir-ctags'
   Plugin 'chr4/nginx.vim'
@@ -52,21 +47,6 @@ end
   Plugin 'flazz/vim-colorschemes'
   Plugin 'bling/vim-airline' "Awesome looking meta at bottom
   Plugin 'vim-airline/vim-airline-themes'
-  Plugin 'majutsushi/tagbar'
-
-  """ Extras that I find useful
-  Plugin 'pbrisbin/vim-mkdir'
-    " Adds :Dash integratio
-  Plugin 'rizzatti/dash.vim'
-    " '%' matches html tags now
-  Plugin 'vim-scripts/matchit.zip'
-    " Snippets ftw!
-  Plugin 'garbas/vim-snipmate'
-  Plugin 'honza/vim-snippets'
-
-  " These were required by something...forgot what though
-  Plugin 'MarcWeber/vim-addon-mw-utils'
-  Plugin 'tomtom/tlib_vim'
 
 call vundle#end()
 filetype on
@@ -125,11 +105,7 @@ endif
 let g:vimwiki_list = [{'path':'$HOME/Dropbox/vimwiki'}]"
 
 " mapping for Vimwiki
-:autocmd FileType vimwiki map <leader>c :call ToggleCalendar() <cr>"
 :autocmd FileType vimwiki map <leader>wj :VimwikiMakeDiaryNote<cr>"
-
-" Opens backlog page
-
 map <Leader>wb :e ~/Dropbox/vimwiki/Backlog.wiki<CR>
 
 " Calender is used within VimWiki
