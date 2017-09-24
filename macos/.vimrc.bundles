@@ -59,6 +59,37 @@ syntax enable
 let g:airline_powerline_fonts = 1
 colorscheme gotham256
 
+""" Cool themes I found
+" *gotham256
+" seoul256
+" wombat256
+" flatcolor
+" colorsbox-greenish
+" *materialbox
+" *luna-term
+" deepsea
+" feral
+" *lucius
+" *lucid
+" *onedark
+" *termschool
+" *molokai
+" *tomorrow
+" *tomorrow_night
+" *tomorrow_night_bright
+" *tomorrow_night_eighties
+" *jellybeans
+" jelleybeans
+" *triplejelly
+" gruvbox
+" badwolf
+" spacegray
+" apprentice
+" neonwave
+" alduin
+" muon
+" cobalt2
+
 "tmux integration
 let g:tmux_navigator_no_mappings = 1
 let g:tmux_navigator_save_on_switch = 1
