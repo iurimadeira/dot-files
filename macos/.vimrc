@@ -29,6 +29,7 @@ set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set autoread      " Reload files changted outside vim
+set cursorline
 
 "Allow usage of mouse in iTerm
 set lazyredraw
