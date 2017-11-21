@@ -61,29 +61,27 @@ colorscheme gotham256
 
 """ Cool themes I found
 " *gotham256
+" **evening
 " seoul256
 " wombat256
 " flatcolor
-" colorsbox-greenish
+" **colorsbox-greenish
 " *materialbox
 " *luna-term
-" deepsea
-" feral
 " *lucius
-" *lucid
 " *onedark
 " *termschool
 " *molokai
 " *tomorrow
 " *tomorrow_night
 " *tomorrow_night_bright
-" *tomorrow_night_eighties
+" **tomorrow_night_eighties
 " *jellybeans
 " jelleybeans
-" *triplejelly
-" gruvbox
-" badwolf
-" spacegray
+" **triplejelly
+" **gruvbox
+" **badwolf
+" **spacegray
 " apprentice
 " neonwave
 " alduin

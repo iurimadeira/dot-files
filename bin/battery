@@ -1,0 +1,1 @@
+echo $(pmset -g batt | grep -o "[0-9]\{1,3\}%") "-" $(pmset -g batt | grep -o '[0-9]\{1,2\}:[0-9]\{1,2\}')
