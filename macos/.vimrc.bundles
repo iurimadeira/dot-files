@@ -132,3 +132,8 @@ let g:multi_cursor_next_key='<C-N>'
 let g:multi_cursor_prev_key='<C-P>'
 let g:multi_cursor_skip_key='<C-X>'
 let g:multi_cursor_quit_key='<Esc>'
+
+" Increase performance
+set cursorline!
+set lazyredraw
+set ttyfast

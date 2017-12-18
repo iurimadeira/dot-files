@@ -30,11 +30,6 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set autoread      " Reload files changted outside vim
 
-" Increase performance
-set cursorline!
-set lazyredraw
-set ttyfast
-
 "Allow usage of mouse in iTerm
 set mouse=a
 set ttymouse=xterm2
