@@ -1,3 +1,7 @@
+" Use Vim settings, rather then Vi settings. This setting must be as early as
+" possible, as it has side effects.
+set nocompatible
+
 :set term=screen-256color
 
 " NERDTree Config
@@ -12,10 +16,6 @@ let g:nerdtree_tabs_startup_cd=1
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_dotfiles = 1
 
-" Use Vim settings, rather then Vi settings. This setting must be as early as
-" possible, as it has side effects.
-set nocompatible
-
 " Leader - ( Spacebar )
 let mapleader = " "
 set backspace=2   " Backspace deletes like most programs in insert mode
@@ -29,11 +29,13 @@ set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set autoread      " Reload files changted outside vim
-set cursorline
 
-"Allow usage of mouse in iTerm
+" Increase performance
+set cursorline!
 set lazyredraw
 set ttyfast
+
+"Allow usage of mouse in iTerm
 set mouse=a
 set ttymouse=xterm2
 
@@ -185,59 +187,7 @@ map <leader>n :vnew<CR>
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
-"update dir to current file
-autocmd BufEnter * silent! cd %:p:h
-
-augroup vimrcEx
-  autocmd!
-
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it for commit messages, when the position is invalid, or when
-  " inside an event handler (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
-
-  " Set syntax highlighting for specific file types
-  autocmd BufRead,BufNewFile Appraisals set filetype=ruby
-  autocmd BufRead,BufNewFile *.md set filetype=markdown
-
-  " Enable spellchecking for Markdown
-  autocmd FileType markdown setlocal spell
-
-  " Automatically wrap at 80 characters for Markdown
-  autocmd BufRead,BufNewFile *.md setlocal textwidth=80
-
-  " Automatically wrap at 72 characters and spell check git commit messages
-  autocmd FileType gitcommit setlocal textwidth=72
-  autocmd FileType gitcommit setlocal spell
-
-  " Allow stylesheets to autocomplete hyphenated words
-  autocmd FileType css,scss,sass,less setlocal iskeyword+=-
-augroup END
-
-
-" Tab completion
-" will insert tab at beginning of line,
-" will use completion if not at beginning
-set wildmode=list:longest,list:full
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
-
 " Ag.vim always searching on project root
 let g:ag_working_path_mode="r"
 
 set timeoutlen=1000 ttimeoutlen=0
-
-let g:syntastic_mode_map = { 'mode': 'passive' }
-noremap <Leader>s :SyntasticCheck<CR>
-
-let g:syntastic_ruby_checkers=['rubocop', 'mri']
-let g:syntastic_javascript_checkers=['jshint']
