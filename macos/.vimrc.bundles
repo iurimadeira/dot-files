@@ -6,34 +6,45 @@ end
   set rtp+=~/.vim/bundle/Vundle.vim/
   call vundle#begin()
 
-  " Plugins to manage plugins. Pluginception?
   Plugin 'gmarik/Vundle.vim'
   Plugin 'tpope/vim-bundler'
 
-  """ Make Vim work like an IDE...Core plugins for me
+  """ Utility stuff
   "
-  Plugin 'slashmili/alchemist.vim'
   Plugin 'christoomey/vim-tmux-navigator'
   Plugin 'vim-scripts/ctags.vim'
   Plugin 'scrooloose/nerdtree'
   Plugin 'jistr/vim-nerdtree-tabs'
   Plugin 'ctrlpvim/ctrlp.vim'
-  Plugin 'ervandew/supertab'
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'rking/ag.vim'
   Plugin 'terryma/vim-multiple-cursors'
-  Plugin 'valloric/youcompleteme'
   Plugin 'iurimadeira/lastbuf.vim'
-  Plugin 'mmorearty/elixir-ctags'
   Plugin 'chr4/nginx.vim'
+
+  """ Language related stuff
+  Plugin 'elixir-lang/vim-elixir'
+  Plugin 'slashmili/alchemist.vim'
+  Plugin 'vim-ruby/vim-ruby'
+  Plugin 'mmorearty/elixir-ctags'
+
+  """ Autocompletion
+  if has('nvim')
+    Plugin 'shougo/deoplete.nvim'
+    let g:deoplete#enable_at_startup = 1
+    inoremap <expr><C-j> pumvisible() ? "\<C-n>" : "\<Down>"
+    inoremap <expr><C-k> pumvisible() ? "\<C-p>" : "\<Up>"
+    inoremap <expr><C-l> pumvisible() ? "\<C-y>" : "\<C-l>"
+  else
+    Plugin 'ervandew/supertab'
+    Plugin 'valloric/youcompleteme'
+  end
 
   """ VimWiki
   Plugin 'vimwiki/vimwiki'
 
   """ Highlighting, syntax, etc for various Languages
-  Plugin 'vim-ruby/vim-ruby'
-  Plugin 'elixir-lang/vim-elixir'
 
   """ Theme / Pretty stuff
   Plugin 'flazz/vim-colorschemes'
@@ -115,25 +126,13 @@ let g:vimwiki_list = [{'path':'$HOME/Dropbox/vimwiki'}]"
 :autocmd FileType vimwiki map <leader>wj :VimwikiMakeDiaryNote<cr>"
 map <Leader>wb :e ~/Dropbox/vimwiki/Backlog.wiki<CR>
 
-" YouCompleteMe and Ultisnips
-
-"" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
- 
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+" Increase performance
+set cursorline!
+set lazyredraw
+set ttyfast
 
 " Multicursor config
 let g:multi_cursor_next_key='<C-N>'
 let g:multi_cursor_prev_key='<C-P>'
 let g:multi_cursor_skip_key='<C-X>'
 let g:multi_cursor_quit_key='<Esc>'
-
-" Increase performance
-set cursorline!
-set lazyredraw
-set ttyfast
