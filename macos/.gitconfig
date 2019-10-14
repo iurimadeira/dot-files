@@ -2,6 +2,6 @@
 	email = iurimadeira@gmail.com
 	name = Iuri Madeira
 [core]
-	editor = code --wait
+	editor = nvim
 [push]
 	default = simple

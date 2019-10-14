@@ -1,1 +1,0 @@
-apm install atom-elixir blame file-icons git-plus git-time-machine indent-guide-improved keyboard-localization language-elixir linter linter-ruby minimap pomodoro relative-numbers vim-mode-plus wakatime
