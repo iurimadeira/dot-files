@@ -7,27 +7,15 @@ brew install vim tmux silversearcher-ag zsh \
   libdbus-1-dev libdbus-glib-1-dev libpq-dev inotify-tools \
   vim-gtk
   
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &> /dev/null
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm &> /dev/null
 
 echo "\n=============================="
-echo "Setting up binaries and dotfiles..."
-echo "==============================\n"
-
-find \.* -maxdepth 0 -type f -exec ln -s $(pwd)/'{}' ~/ \;
-ln -s "$(pwd)/../bin/" ~/
-chmod +x -R "$(pwd)/bin"
-
-echo "\n=============================="
 echo "Setting up dotfiles..."
 echo "==============================\n"
 
-sh update
 sh install-airline-fonts
 sh install-gnome-themes
-sh install-asdf
 
