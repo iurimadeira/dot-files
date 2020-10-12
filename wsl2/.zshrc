@@ -28,9 +28,6 @@ function notes() { code ~/Dropbox/org-mode }
 # Git functions
 function gcaa() { git add --all;  git commit; }
 
-function ssh-core-log() { ssh -t $1 'sudo tail -f /var/log/upstart/tp-core.log'; }
-function ssh-core-console() { ssh -t $1 'sudo /opt/tp-core/bin/core remote_console'; }
-
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
