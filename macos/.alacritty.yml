@@ -14,6 +14,9 @@ env:
   TERM: tmux-256color
 
 window:
+  dynamic_title: true
+
+  startup_mode: Maximized
   # Window dimensions in character columns and lines
   # (changes require restart)
   dimensions:
@@ -32,7 +35,7 @@ window:
 
   # Window decorations
   # Setting this to false will result in window without borders and title bar.
-  decorations: full
+  decorations: "none"
 
 colors:
   primary:
@@ -193,8 +196,6 @@ selection:
   # the selection clipboard. Otherwise, it will only be copied to the selection
   # clipboard.
   save_to_clipboard: true
-
-window.dynamic_title: true
 
 cursor:
   # Cursor style
